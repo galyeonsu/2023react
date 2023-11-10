@@ -3,7 +3,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const gal = "안녕하세요"
+  const gal = "안녕하세요."
   let [listData, setListData] = useState(1)
   return (
     <div className="App">
