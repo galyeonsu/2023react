@@ -6,6 +6,7 @@
 
  import 'swiper/css';
  import 'swiper/css/navigation';
+ 
 
  function Modal() {
     return (

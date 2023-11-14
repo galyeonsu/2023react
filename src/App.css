@@ -22,7 +22,22 @@ li{list-style: none;}
   width: 300px;
   height: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ align-items: flex-end;
 }
+.tab > ul{display: flex;}
+.tab > ul >li {
+  padding: 10px; cursor: pointer; border-radius: 5px 5px 0 0; 
+  border: 1px solid #000;
+  border-right: 0 none;
+}
+.tab > ul >li.last-child{
+  border-right: 1px solid ;
+}
+.tab > ul >li.active {background: skyblue;}
 
 .myP{
   color: #f00;
@@ -41,6 +56,33 @@ li{list-style: none;}
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 100;
   background-color: skyblue;
 }
+
+.lists > li {
+padding: 10px 0;
+cursor: pointer;
+}
+.lists > li:hover {
+  background: skyblue;
+}
+.btnWrap{
+  display: flex;
+  justify-content: end;
+}
+.btnWrap button{
+  padding: 5px, 15px;
+}
+.num{
+  background-color: skyblue;
+  display: inline-block;
+  padding: 10px;
+}
+.avata{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avata img{width: 100%;}
