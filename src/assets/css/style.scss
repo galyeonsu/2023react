@@ -1,0 +1,18 @@
+$primary_coler :#333;
+$shadow: 10px 10px 10px rgba(0,0,0,0.3);
+
+.nav{
+    color: $primary_coler;
+    font-size:  2em;
+    .boxWrap{
+        background: pink;
+        width: 100px;
+        height: 100px;
+        box-shadow: $shadow;
+        position: absolute;
+        z-index: 100000;
+    }
+    &.active{
+        background: red;
+    }
+}

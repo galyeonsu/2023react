@@ -34,10 +34,10 @@ li{list-style: none;}
   border: 1px solid #000;
   border-right: 0 none;
 }
-.tab > ul >li.last-child{
+.tab > ul >li:last-child{
   border-right: 1px solid ;
 }
-.tab > ul >li.active {background: skyblue;}
+.tab > ul >li.active {background: skyblue; border-bottom: none;}
 
 .myP{
   color: #f00;
@@ -86,3 +86,66 @@ cursor: pointer;
   overflow: hidden;
 }
 .avata img{width: 100%;}
+
+.visualWarp{
+  background: gray;
+}
+.visualWrap{
+  background: gray;
+}
+.contentWrap01{
+  background: papayawhip;
+}
+.dot{
+  position: relative;
+}
+
+.dot::after{
+  content:'';
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: #ff0000;
+  margin: 10px auto;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-700%);
+}
+
+
+.card{
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.card:hover{
+  transform: translate(-10px, -10px);
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.banner{
+  height: 400px;
+}
+.icon{
+  width: 70px;
+  height: 70px;
+  background: skyblue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img{
+  position: absolute;
+}
+.banWrap{
+  background-image: url(./assets/img/bannerBg01.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
